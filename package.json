@@ -2,9 +2,10 @@
   "name": "twilio",
   "version": "1.0.0",
   "description": "Twilio take-home",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "watch": "nodemon --ignore public"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "dependencies": {
     "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
-    "livereload": "^0.9.3"
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.7"
   }
 }
