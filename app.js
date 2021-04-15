@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 			.then(response => {
 				const friends = [];
 
-				response?.data?.friends.map( friend => {
+				response?.data?.friends.forEach( friend => {
 					const username = friend.username;
 
 					// We should do a check here whether a username already exists.
